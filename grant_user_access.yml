@@ -7,8 +7,7 @@
 
     - name: Set up multiple authorized keys
       with_file:
-        - public_keys/georgeh
-        - public_keys/ames
+        - public_keys/amyk
       ansible.posix.authorized_key:
         user: ec2-user
         state: present
